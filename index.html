@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UX Toolkit</title>
+    
+    <!--css link-->
     <link rel="stylesheet" href="style.css"> 
+    
+    <!--bootstrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Link to your external CSS file (optional) -->
+    
 </head>
+
+<!-------------------------- body starts here -------------------------------------->
+
 <body>
+
     <header>
         
+        <!-- very top name and search bar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">D</a>
+              <a class="navbar-brand" href="#">Name of Site</a>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
@@ -21,7 +31,8 @@
               </div>
             </div>
           </nav>
-
+        
+        <!-- nav buttons -->
         <button type="button" class="btn btn-outline-primary">Design Process</button>
         <button type="button" class="btn btn-outline-secondary">Empathize</button>
         <button type="button" class="btn btn-outline-success">Define</button>
@@ -30,8 +41,11 @@
         <button type="button" class="btn btn-outline-info">Test</button>
         <button type="button" class="btn btn-outline-dark">Community</button>
 
+        <h1>Improving The Double Diamond Design Process</h1>
     </header>
 
+
+    <!------------- hero image ------------------>
 
         <div class="d-flex min-vh-100" lc-helper="background" style="background:url(https://images.unsplash.com/34/ddTzoX58Q153kjaitXl4_ny.jpg?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;h=768&amp;fit=crop&amp;ixid=eyJhcHBfaWQiOjM3ODR9)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
             <div class="align-self-center text-center text-light col-md-8 offset-md-2">
@@ -43,12 +57,7 @@
     
                 <div class="lc-block">
                     <div editable="rich">
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus porttitor dui.</p>
-    
-                        <p class="lead">Sim in vestibulum metus pulvinar sit amet.
-    
-                        </p>
-    
+                        <p class="lead">This text will include our mission statement.</p>
                     </div>
                 </div>
     
@@ -58,22 +67,341 @@
                         <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"></path>
                     </svg>
     
-                    <!-- for Safari support only, remove if you want  -->
+                    <!-- for Safari support  -->
                     <script async="" src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
                 </div>
             </div>
         </div>
 
 
+    <!----------------- main part ---------------------------------->
+
     <main>
-        <section>
-            <h2>Welcome to Your Website!</h2>
-            <p>This is the main content of your web page.</p>
-        </section>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            
+            <!-- Empathize -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Empathize
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            
+                <!-- empathize cards -->
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">User Research</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Research Plan</li>
+                        <li class="list-group-item">Proto-Personas</li>
+                        <li class="list-group-item">User Interviews</li>
+                        <li class="list-group-item">Stakeholder Interviews</li>
+                        <li class="list-group-item">Surveys</li>
+                        <li class="list-group-item">Observational Research</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Competitive Research</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Competitor Review</li>
+                        <li class="list-group-item">Feedback Analysis</li>
+                        <li class="list-group-item">SWOT Analysis</li>
+                        <li class="list-group-item">Heuristic Evaluation</li>
+                        <li class="list-group-item">Benchmarking</li>
+                        <li class="list-group-item">Accessibility Assessment</li>
+                        <li class="list-group-item">Feature Analysis</li>
+                        <li class="list-group-item">Content Analysis</li>
+                        <li class="list-group-item">User Testing</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                </div>
+            <!-- end of empathize cards-->
+            </div>
+
+            <!-- Define -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Define
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+
+                    <!-- define cards -->
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">User Insight</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Affinity Mapping</li>
+                                <li class="list-group-item">User Insight Statement</li>
+                                <li class="list-group-item">Empathy Map</li>
+                                <li class="list-group-item">User Personas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Interface Analysis</h5>
+                                <p class="card-text">This is a short card.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Content Inventory</li>
+                                <li class="list-group-item">Content Audit</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        </div>
+                    <!-- end of define cards-->
+              </div>
+            </div>
+
+            <!-- Ideate -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Ideate
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <!-- ideate cards -->
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Brainstorming</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">I like, I wish, what if?</li>
+                            <li class="list-group-item">Crazy 8's</li>
+                            <li class="list-group-item">SCAMPER Technique</li>
+                            <li class="list-group-item">Reverse Thinking</li>
+                            <li class="list-group-item">Role Playing</li>
+                            <li class="list-group-item">Provocation Cards</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Prioritization</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Prioritization Matrix</li>
+                            <li class="list-group-item">Mind Mapping</li>
+                            <li class="list-group-item">Dot Voting</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Storytelling</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Storyboards</li>
+                            <li class="list-group-item">Journey Map</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Information Architecture</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Content Inventory</li>
+                            <li class="list-group-item">Card Sorting</li>
+                            <li class="list-group-item">Sitemap Creation</li>
+                            <li class="list-group-item">Design Principles</li>
+                            <li class="list-group-item">Content Labelling</li>
+                            <li class="list-group-item">User Flows</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    </div>
+                <!-- end of ideate cards-->
+              </div>
+            </div>
+
+            <!-- Prototype -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Prototype
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+
+                    <!-- prototype cards -->
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Atomic Design</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Components</li>
+                            <li class="list-group-item">Style Tiles</li>
+                            <li class="list-group-item">Style Guides</li>
+                            <li class="list-group-item">Iconography</li>
+                            <li class="list-group-item">Mood Boards</li>
+                            <li class="list-group-item">Imagery</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Prototyping</h5>
+                          </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Interactive Design</li>
+                            <li class="list-group-item">Responsive Design</li>
+                            <li class="list-group-item">Paper Prototyping</li>
+                            <li class="list-group-item">Digital Prototyping</li>
+                            <li class="list-group-item">Iterative Prototyping</li>
+                            <li class="list-group-item">Developer Handoff</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Design Systems</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Figma</li>
+                            <li class="list-group-item">Adobe</li>
+                            <li class="list-group-item">InVision</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    </div>
+                <!-- end of prototype cards-->
+            
+                </div>
+              </div>
+
+            <!-- Test -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Test
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+
+                <!-- test cards -->
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Preparation</h5>
+                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Testing Plans & Templates</li>
+                                <li class="list-group-item">Tools</li>
+                                <li class="list-group-item">Documentation</li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Interface Evaluation</h5>
+                              <p class="card-text">This is a short card.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Accessibility Testing</li>
+                                <li class="list-group-item">A/B Testing</li>
+                                <li class="list-group-item">Card Sorting</li>
+                                <li class="list-group-item">Tree Testing</li>
+                                <li class="list-group-item">5-Second Test</li>
+                                <li class="list-group-item">Comparative Analyses</li>
+                                <li class="list-group-item">KPI Analysis</li>
+                              </ul>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">User Testing</h5>
+                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <a href="pages/UsabilityTesting.html"><li class="list-group-item">User Testing</li></a>
+                                <li class="list-group-item">Guerrilla User Testing</li>
+                                <li class="list-group-item">Remote User Testing</li>
+                                <li class="list-group-item">Task Analysis</li>
+                                <li class="list-group-item">Eye-Tracking & Heat-Maps</li>
+                                <li class="list-group-item">First-Click Testing</li>
+                              </ul>
+                          </div>
+                        </div>
+
+                      </div>
+                    <!-- end of test cards-->
+
+                </div>
+              </div>
+
+
+          </div>
     </main>
+
+
+    <!------------------------- footer ------------------------------------->
 
     <footer>
         <p>&copy; 2023 UX Toolkit. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JavaScript and jQuery libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
