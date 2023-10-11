@@ -12,22 +12,36 @@
 
 
 // Download Modal status animation
-// Get a reference to the scaling-dots container
-const scalingDotsContainer = document.querySelector('.animate-dots');
+// Function to show the modal and start the animation
+function showModal() {
+    const modal = document.getElementById("downloadModal");
+    const animation = document.getElementById("downloadAnimation");
 
-// Function to stop the animation after a specified duration (in milliseconds)
-function stopAnimation(duration) {
-    // Set a timeout to remove the animation class after the specified duration
+    modal.style.display = "block";
+    
+    // Add the animation class to start the animation
+    animation.classList.add("animate-dots");
+
     setTimeout(() => {
-        scalingDotsContainer.classList.remove('animate-dots');
-    }, duration);
+        hideModal(); // Hide the modal after 3 seconds
+    }, 3000);
 }
 
-// Event listener for when the modal is shown
-$('#DownloadModal').on('shown.bs.modal', function () {
-    // Start the animation by adding the animation class
-    scalingDotsContainer.classList.add('animate-dots');
+// Function to hide the modal and stop the animation
+function hideModal() {
+    const modal = document.getElementById("downloadModal");
+    const animation = document.getElementById("downloadAnimation");
+
+    modal.style.display = "none";
     
-    // Stop the animation after 3 seconds (3000 milliseconds)
-    stopAnimation(3000);
-});
+    // Remove the animation class to stop the animation
+    animation.classList.remove("animate-dots");
+
+    // Show the "Download Successful!" message
+    document.getElementById("downloadSuccessMessage").style.display = "block";
+}
+
+// Attach event listeners to the trigger button and close button
+document.getElementById("downloadButton").addEventListener("click", showModal);
+document.getElementById("closeModal").addEventListener("click", hideModal);
+
