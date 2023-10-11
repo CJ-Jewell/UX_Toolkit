@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UX Toolkit</title>
+    <title>UX Navigator</title>
     
     <!--css link-->
     <link rel="stylesheet" href="style.css"> 
@@ -18,12 +18,13 @@
 
 <body>
 
-    <header>
+    <header class="sticky-top"> 
         
         <!-- very top name and search bar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Name of Site</a>
+              <a class="navbar-brand" href="#">
+                <img alt="Logo">UX Navigator</a>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
@@ -32,18 +33,22 @@
             </div>
           </nav>
         
-        <!-- nav buttons -->
-        <button type="button" class="btn btn-outline-primary">Design Process</button>
-        <button type="button" class="btn btn-outline-secondary">Empathize</button>
-        <button type="button" class="btn btn-outline-success">Define</button>
-        <button type="button" class="btn btn-outline-danger">Ideate</button>
-        <button type="button" class="btn btn-outline-warning">Prototype</button>
-        <button type="button" class="btn btn-outline-info">Test</button>
-        <button type="button" class="btn btn-outline-dark">Community</button>
+        <div>
 
-        <h1>Improving The Double Diamond Design Process</h1>
+          <!-- nav buttons -->
+          <a href="#design process"><button type="button" class="btn btn-outline-primary">Design Process</button></a>
+          <a href="#empathize"><button type="button" class="btn btn-outline-secondary">Empathize</button></a>
+          <a href="#define"><button type="button" class="btn btn-outline-success">Define</button></a>
+          <a href="#ideate"><button type="button" class="btn btn-outline-danger">Ideate</button></a>
+          <a href="#prototype"><button type="button" class="btn btn-outline-warning">Prototype</button></a>
+          <a href="#test"><button type="button" class="btn btn-outline-info">Test</button></a>
+          <button type="button" class="btn btn-outline-dark">Community</button>
+
+      </div>
+
     </header>
 
+    <h1>Improving The Double Diamond Design Process</h1>
 
     <!------------- hero image ------------------>
 
@@ -73,21 +78,47 @@
             </div>
         </div>
 
+        <div>
+          <p>The design thinking process is iterative, flexible, and focused on collaboration between designers and users.</p>
+          <p>The prcess is nonlinear. It folds back on itself and jumps around the process while solving human-centered problems. Use this process when you want to create a new product or service, or to improve a product or service that already exists.</p>
+          <p>The design thinking process can transform the way organizations develop products, services, processes, and strategies. It can develop people's creative potential, and can spur innovation.</p>
+        </div>
+
 
     <!----------------- main part ---------------------------------->
 
     <main>
         <div class="accordion accordion-flush" id="accordionFlushExample">
             
-            <!-- Empathize -->
-            <div class="accordion-item">
+            <!-- Design Process -->
+            <div class="accordion-item" id="designprocess">
               <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Empathize
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseZero" aria-expanded="false" aria-controls="flush-collapseZero">
+                  Design Process
+                </button>
+              </h2>
+              <div id="flush-collapseZero" class="accordion-collapse collapse" aria-labelledby="flush-headingZero" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+
+            </div>
+
+            <!-- Empathize -->
+            <div class="accordion-item" id="empathize">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><img alt="image">
+                  Empathize Phase
+                  <p>Understand and connect with users' needs, emotions, and experiences</p>
                 </button>
               </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                <div class="accordion-body">The first phase of the design thinking process exists to gain an empathic understanding of the problem you're trying to solve.
+                  <ul>
+                    <li>Learn about the users</li>
+                    <li>Learn about the company</li>
+                    <li>Learn about the competition</li>
+                  </ul>
+                </div>
             
                 <!-- empathize cards -->
                 <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -132,14 +163,20 @@
             </div>
 
             <!-- Define -->
-            <div class="accordion-item">
+            <div class="accordion-item" id="define">
               <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Define
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"><img alt="image">
+                  Define Phase
                 </button>
               </h2>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                <div class="accordion-body">In the second phase of the design thinking process, you put together the research you have created and gathered during the empathize phase.
+                  <ul>
+                    <li>Analyze your observations</li>
+                    <li>Synthesize research to define the core problems</li>
+                    <li>Identify a problem and user to focus on</li>
+                  </ul>
+                </div>
 
                     <!-- define cards -->
                     <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -178,14 +215,20 @@
             </div>
 
             <!-- Ideate -->
-            <div class="accordion-item">
+            <div class="accordion-item" id="ideate">
               <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Ideate
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"><img alt="image">
+                  Ideate Phase
                 </button>
               </h2>
               <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-body">In the third phase of the design thinking process, designers are ready to start generating ideas.
+                  <ul>
+                    <li>Brainstorm</li>
+                    <li>Sketch</li>
+                    <li>Use a lot of sticky notes</li>
+                  </ul>
+                </div>
                 <!-- ideate cards -->
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
@@ -254,14 +297,20 @@
             </div>
 
             <!-- Prototype -->
-            <div class="accordion-item">
+            <div class="accordion-item" id = "prototype">
                 <h2 class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    Prototype
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"><img alt="image">
+                    Prototype Phase
                   </button>
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div class="accordion-body">During the fourth phase of the design thinking process, the design team wil produce a number of low-cost, low-fidelity prototypes based on ideas generated during the previous phase.
+                    <ul>
+                      <li>Make user flows</li>
+                      <li>Sketch paper prototypes</li>
+                      <li>Build high fidelity prototypes</li>
+                    </ul>
+                  </div>
 
                     <!-- prototype cards -->
                     <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -319,15 +368,22 @@
               </div>
 
             <!-- Test -->
-            <div class="accordion-item">
+            <div class="accordion-item" id = "test">
                 <h2 class="accordion-header" id="flush-headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    Test
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"><img alt="image">
+                    Test Phase
                   </button>
                 </h2>
                 <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
                   
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    <div class="accordion-body">The fifth phase of the design thinking process is very iterative.
+                      <ul>
+                        <li>Produce a minimum viable product (MVP)</li>
+                        <li>Test the MVP</li>
+                        <li>Iterate and redesign it</li>
+                        <li>Test it again</li>
+                      </ul>
+                    </div>
 
                 <!-- test cards -->
                     <div class="row row-cols-1 row-cols-md-2 g-4">
