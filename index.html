@@ -7,7 +7,7 @@
     <title>UX Navigator</title>
     
     <!--css link-->
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
     
     <!--bootstrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -21,7 +21,7 @@
     <header class="sticky-top"> 
         
         <!-- very top name and search bar -->
-        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar sticky-top navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img alt="Logo">UX Navigator</a>
@@ -106,11 +106,14 @@
             <!-- Empathize -->
             <div class="accordion-item" id="empathize">
               <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><img alt="image">
-                  Empathize Phase
-                  <p>Understand and connect with users' needs, emotions, and experiences</p>
+                <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <img src="images/image-source.jpg" alt="Image Alt Text" class="mr-3">
+                    <div>
+                        <h3>Empathize Phase</h3>
+                        <p style="margin-left: 30px;">Understand and connect with users' needs, emotions, and experiences</p>
+                    </div>
                 </button>
-              </h2>
+            </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">The first phase of the design thinking process exists to gain an empathic understanding of the problem you're trying to solve.
                   <ul>
@@ -129,12 +132,13 @@
                         <h5 class="card-title">User Research</h5>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Research Plan</li>
+                        <li class="list-group-item">Observational Research</li>
                         <li class="list-group-item">Proto-Personas</li>
-                        <li class="list-group-item">User Interviews</li>
+                        <li class="list-group-item">Research Plan</li>
                         <li class="list-group-item">Stakeholder Interviews</li>
                         <li class="list-group-item">Surveys</li>
-                        <li class="list-group-item">Observational Research</li>
+                        <li class="list-group-item">User Interviews</li>
+
                         </ul>
                     </div>
                 </div>
@@ -165,8 +169,12 @@
             <!-- Define -->
             <div class="accordion-item" id="define">
               <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"><img alt="image">
-                  Define Phase
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <img src="images/file.jpg" alt="Image Alt Text" class="mr-3">
+                  <div>
+                    <h3>Define Phase</h3>
+                    <p style="margin-left: 30px;">Use what you've learned to identify the main problem needing to be solved</p>
+                  </div>
                 </button>
               </h2>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -185,12 +193,11 @@
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">User Insight</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">Affinity Mapping</li>
-                                <li class="list-group-item">User Insight Statement</li>
                                 <li class="list-group-item">Empathy Map</li>
+                                <li class="list-group-item">User Insight Statement</li>
                                 <li class="list-group-item">User Personas</li>
                                 </ul>
                             </div>
@@ -200,11 +207,10 @@
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Interface Analysis</h5>
-                                <p class="card-text">This is a short card.</p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Content Inventory</li>
                                 <li class="list-group-item">Content Audit</li>
+                                <li class="list-group-item">Content Inventory</li>
                                 </ul>
                             </div>
                         </div>
@@ -217,8 +223,12 @@
             <!-- Ideate -->
             <div class="accordion-item" id="ideate">
               <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"><img alt="image">
-                  Ideate Phase
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <img src="images/image-source.jpg" alt="Image Alt Text" class="mr-3">
+                  <div>
+                    <h3>Ideate Phase</h3>
+                    <p style="margin-left: 30px;">Generate a wide range of ideas and potential solutions for the defined problem</p>
+                  </div>
                 </button>
               </h2>
               <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -238,14 +248,14 @@
                             <h5 class="card-title">Brainstorming</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">I like, I wish, what if?</li>
-                            <li class="list-group-item">Crazy 8's</li>
-                            <li class="list-group-item">SCAMPER Technique</li>
-                            <li class="list-group-item">Reverse Thinking</li>
-                            <li class="list-group-item">Role Playing</li>
-                            <li class="list-group-item">Provocation Cards</li>
-                            </ul>
-                        </div>
+                          <li class="list-group-item">Crazy 8's</li>  
+                          <li class="list-group-item">I like, I wish, what if?</li>
+                          <li class="list-group-item">Provocation Cards</li>
+                          <li class="list-group-item">Reverse Thinking</li>
+                          <li class="list-group-item">Role Playing</li>
+                          <li class="list-group-item">SCAMPER Technique</li>
+                        </ul>
+                      </div>
                     </div>
                     <div class="col">
                         <div class="card h-100">
@@ -254,9 +264,9 @@
                             <h5 class="card-title">Prioritization</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Prioritization Matrix</li>
-                            <li class="list-group-item">Mind Mapping</li>
                             <li class="list-group-item">Dot Voting</li>
+                            <li class="list-group-item">Mind Mapping</li>
+                            <li class="list-group-item">Prioritization Matrix</li>
                             </ul>
                         </div>
                     </div>
@@ -268,8 +278,8 @@
                             <h5 class="card-title">Storytelling</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Storyboards</li>
                             <li class="list-group-item">Journey Map</li>
+                            <li class="list-group-item">Storyboards</li>
                             </ul>
                         </div>
                     </div>
@@ -281,14 +291,15 @@
                             <h5 class="card-title">Information Architecture</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Content Inventory</li>
-                            <li class="list-group-item">Card Sorting</li>
-                            <li class="list-group-item">Sitemap Creation</li>
+                          <li class="list-group-item">Card Sorting</li> 
+                          <li class="list-group-item">Content Labelling</li> 
+                          <li class="list-group-item">Content Inventory</li>
                             <li class="list-group-item">Design Principles</li>
-                            <li class="list-group-item">Content Labelling</li>
-                            <li class="list-group-item">User Flows</li>
-                            </ul>
-                        </div>
+
+                          <li class="list-group-item">Sitemap Creation</li>
+                          <li class="list-group-item">User Flows</li>
+                        </ul>
+                      </div>
                     </div>
 
                     </div>
@@ -299,8 +310,12 @@
             <!-- Prototype -->
             <div class="accordion-item" id = "prototype">
                 <h2 class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"><img alt="image">
-                    Prototype Phase
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <img src="images/image-source.jpg" alt="Image Alt Text" class="mr-3">
+                    <div>
+                      <h3>Prototype Phase</h3>
+                      <p style="margin-left: 30px;">Create a simplified, testable version of your ideas</p>
+                    </div>
                   </button>
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
@@ -322,11 +337,11 @@
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Components</li>
-                            <li class="list-group-item">Style Tiles</li>
-                            <li class="list-group-item">Style Guides</li>
                             <li class="list-group-item">Iconography</li>
-                            <li class="list-group-item">Mood Boards</li>
                             <li class="list-group-item">Imagery</li>
+                            <li class="list-group-item">Mood Boards</li>
+                            <li class="list-group-item">Style Guides</li>
+                            <li class="list-group-item">Style Tiles</li>
                             </ul>
                         </div>
                     </div>
@@ -337,14 +352,14 @@
                             <h5 class="card-title">Prototyping</h5>
                           </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Interactive Design</li>
-                            <li class="list-group-item">Responsive Design</li>
-                            <li class="list-group-item">Paper Prototyping</li>
-                            <li class="list-group-item">Digital Prototyping</li>
-                            <li class="list-group-item">Iterative Prototyping</li>
-                            <li class="list-group-item">Developer Handoff</li>
-                            </ul>
-                        </div>
+                          <li class="list-group-item">Developer Handoff</li>  
+                          <li class="list-group-item">Digital Prototyping</li>
+                          <li class="list-group-item">Interactive Design</li>
+                          <li class="list-group-item">Iterative Prototyping</li>
+                          <li class="list-group-item">Paper Prototyping</li>
+                          <li class="list-group-item">Responsive Design</li>
+                        </ul>
+                      </div>
                     </div>
 
                     <div class="col">
@@ -354,8 +369,8 @@
                             <h5 class="card-title">Design Systems</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Figma</li>
                             <li class="list-group-item">Adobe</li>
+                            <li class="list-group-item">Figma</li>
                             <li class="list-group-item">InVision</li>
                             </ul>
                         </div>
@@ -370,8 +385,12 @@
             <!-- Test -->
             <div class="accordion-item" id = "test">
                 <h2 class="accordion-header" id="flush-headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"><img alt="image">
-                    Test Phase
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    <img src="images/image-source.jpg" alt="Image Alt Text" class="mr-3">
+                    <div>
+                      <h3>Test Phase</h3>
+                      <p style="margin-left: 30px;">Gather feedback and make improvements on your design</p>
+                    </div>
                   </button>
                 </h2>
                 <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
@@ -392,12 +411,11 @@
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Preparation</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Testing Plans & Templates</li>
+                              <li class="list-group-item">Documentation</li>  
+                              <li class="list-group-item">Testing Plans & Templates</li>
                                 <li class="list-group-item">Tools</li>
-                                <li class="list-group-item">Documentation</li>
                               </ul>
                           </div>
                         </div>
@@ -406,16 +424,15 @@
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Interface Evaluation</h5>
-                              <p class="card-text">This is a short card.</p>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">Accessibility Testing</li>
                                 <li class="list-group-item">A/B Testing</li>
                                 <li class="list-group-item">Card Sorting</li>
-                                <li class="list-group-item">Tree Testing</li>
-                                <li class="list-group-item">5-Second Test</li>
                                 <li class="list-group-item">Comparative Analyses</li>
                                 <li class="list-group-item">KPI Analysis</li>
+                                <li class="list-group-item">Tree Testing</li>
+                                <li class="list-group-item">5-Second Test</li>
                               </ul>
                           </div>
                         </div>
@@ -425,15 +442,16 @@
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">User Testing</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <a href="pages/UsabilityTesting.html"><li class="list-group-item">User Testing</li></a>
+                                
+                                <li class="list-group-item">Eye-Tracking & Heat-Maps</li>
+                                <li class="list-group-item">First-Click Testing</li>
                                 <li class="list-group-item">Guerrilla User Testing</li>
                                 <li class="list-group-item">Remote User Testing</li>
                                 <li class="list-group-item">Task Analysis</li>
-                                <li class="list-group-item">Eye-Tracking & Heat-Maps</li>
-                                <li class="list-group-item">First-Click Testing</li>
+                                <a href="pages/UsabilityTesting.html"><li class="list-group-item">Usability Testing</li></a>
+
                               </ul>
                           </div>
                         </div>
@@ -451,9 +469,128 @@
 
     <!------------------------- footer ------------------------------------->
 
-    <footer>
-        <p>&copy; 2023 UX Toolkit. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>UX Navigator
+              </h6>
+              <p>
+                Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- end of copyright -->
     </footer>
+
 
     <!-- Bootstrap JavaScript and jQuery libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
