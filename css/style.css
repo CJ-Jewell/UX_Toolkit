@@ -11,7 +11,155 @@
 }
 
 header {
-    background-color: darkblue;
+    background-color: #152730;
+}
+
+html {
+    background-color: #152730;
+}
+
+.topnav {
+    padding: 10px;
+}
+
+
+/* navigation buttons */
+.btndesignproc {
+    background: linear-gradient(135deg, #808080, #333333);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btndesignproc:hover {
+    background: linear-gradient(135deg, #333333, #808080);
+}
+
+/* */
+.btnempathize {
+    background: linear-gradient(135deg, #6AC3F8, #0076A3);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnempathize:hover {
+    background: linear-gradient(135deg, #0076A3, #6AC3F8);
+}
+
+/* */
+.btndefine {
+    background: linear-gradient(135deg, #EF9D51, #BF6B0F);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btndefine:hover {
+    background: linear-gradient(135deg, #BF6B0F, #EF9D51); /* Swapped gradient colors on hover */
+}
+
+/* */
+.btnideate {
+    background: linear-gradient(135deg, #37B651, #1E7221);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnideate:hover {
+    background: linear-gradient(135deg, #1E7221, #37B651); /* Swapped gradient colors on hover */
+}
+
+/* */
+.btnproto {
+    background: linear-gradient(135deg, #3D75CC, #0F2D66);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnproto:hover {
+    background: linear-gradient(135deg, #0F2D66, #3D75CC); /* Swapped gradient colors on hover */
+}
+
+/* */
+.btntest {
+    background: linear-gradient(135deg, #D03771, #800A32);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btntest:hover {
+    background: linear-gradient(135deg, #800A32, #D03771); /* Swapped gradient colors on hover */
+}
+
+/* */
+.btncomm {
+    background: linear-gradient(135deg, #808080, #333333);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btncomm:hover {
+    background: linear-gradient(135deg, #333333, #808080); /* Swapped gradient colors on hover */
+}
+
+
+.banner {
+    background-color: #152730;
+    justify-content: center;
+    align-content: center;
+    color: rgb(211, 211, 211);
+    padding: 5px;
+    
+}
+
+
+
+
+/* */
+.empathize {
+    background: linear-gradient(138deg, #6AC3F8 31.43%, rgba(106, 195, 248, 0.50) 31.43%, rgba(106, 195, 248, 0.30) 50.84%, rgba(106, 195, 248, 0.50) 76.2%, #6AC3F8 76.2%);
+}
+
+.define {
+    background: linear-gradient(138deg, #EF9D51 31.43%, rgba(239, 157, 81, 0.50) 31.43%, rgba(239, 157, 81, 0.30) 50.84%, rgba(239, 157, 81, 0.50) 76.2%, #EF9D51 76.2%);
+    
+}
+
+.ideate {
+    background: linear-gradient(138deg, #37B651 31.43%, rgba(55, 182, 81, 0.50) 31.43%, rgba(55, 182, 81, 0.30) 50.84%, rgba(55, 182, 81, 0.50) 76.2%, #37B651 76.2%);
+}
+
+.prototype {
+    background: linear-gradient(138deg, #3D75CC 31.43%, rgba(61, 117, 204, 0.50) 31.43%, rgba(61, 117, 204, 0.30) 50.84%, rgba(61, 117, 204, 0.50) 76.2%, #3D75CC 76.2%);
+    
+}
+
+.test {
+    background: linear-gradient(138deg, #D03771 31.43%, rgba(208, 55, 113, 0.50) 31.43%, rgba(208, 55, 113, 0.30) 50.84%, rgba(208, 55, 113, 0.50) 76.2%, #D03771 76.2%);
+    
+}
+
+#card {
+    width: 20rem;
 }
 
 /* Scaling Dots Animation */

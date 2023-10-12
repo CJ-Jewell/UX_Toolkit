@@ -18,7 +18,7 @@
 
 <body>
 
-    <header class="sticky-top"> 
+    <header class="sticky-top topnav"> 
         
         <!-- very top name and search bar -->
         <nav class="navbar sticky-top navbar-expand-lg">
@@ -36,20 +36,21 @@
         <div>
 
           <!-- nav buttons -->
-          <a href="#design process"><button type="button" class="btn btn-outline-primary">Design Process</button></a>
-          <a href="#empathize"><button type="button" class="btn btn-outline-secondary">Empathize</button></a>
-          <a href="#define"><button type="button" class="btn btn-outline-success">Define</button></a>
-          <a href="#ideate"><button type="button" class="btn btn-outline-danger">Ideate</button></a>
-          <a href="#prototype"><button type="button" class="btn btn-outline-warning">Prototype</button></a>
-          <a href="#test"><button type="button" class="btn btn-outline-info">Test</button></a>
-          <button type="button" class="btn btn-outline-dark">Community</button>
+          <a href="#designprocess"><button type="button" class="btndesignproc">Design Process</button></a>
+          <a href="#empathize"><button type="button" class="btnempathize">Empathize</button></a>
+          <a href="#define"><button type="button" class="btndefine">Define</button></a>
+          <a href="#ideate"><button type="button" class="btnideate">Ideate</button></a>
+          <a href="#prototype"><button type="button" class="btnproto">Prototype</button></a>
+          <a href="#test"><button type="button" class="btntest">Test</button></a>
+          <button type="button" class="btncomm">Community</button>
 
       </div>
 
     </header>
 
-    <h1>Improving The Double Diamond Design Process</h1>
-
+    <div class="banner">
+      <h1>Improving The Double Diamond Design Process</h1>
+    </div>
     <!------------- hero image ------------------>
 
         <div class="d-flex min-vh-100" lc-helper="background" style="background:url(https://images.unsplash.com/34/ddTzoX58Q153kjaitXl4_ny.jpg?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;h=768&amp;fit=crop&amp;ixid=eyJhcHBfaWQiOjM3ODR9)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
@@ -126,9 +127,8 @@
                 <!-- empathize cards -->
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
-                    <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card">
+                    <div class="card-body empathize">
                         <h5 class="card-title">User Research</h5>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -143,9 +143,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card">
+                    
+                    <div class="card-body empathize">
                         <h5 class="card-title">Competitive Research</h5>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -189,9 +189,9 @@
                     <!-- define cards -->
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         <div class="col">
-                            <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card">
+                            
+                            <div class="card-body define">
                                 <h5 class="card-title">User Insight</h5>
                             </div>
                             <ul class="list-group list-group-flush">
@@ -203,9 +203,9 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card">
+                            
+                            <div class="card-body define">
                                 <h5 class="card-title">Interface Analysis</h5>
                             </div>
                             <ul class="list-group list-group-flush">
@@ -242,9 +242,9 @@
                 <!-- ideate cards -->
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
-                        <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card">
+                        
+                        <div class="card-body ideate">
                             <h5 class="card-title">Brainstorming</h5>
                         </div>
                         <ul class="list-group list-group-flush">
@@ -258,9 +258,9 @@
                       </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card">
+                        
+                        <div class="card-body ideate">
                             <h5 class="card-title">Prioritization</h5>
                         </div>
                         <ul class="list-group list-group-flush">
@@ -272,9 +272,9 @@
                     </div>
 
                     <div class="col">
-                        <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card">
+                        
+                        <div class="card-body ideate">
                             <h5 class="card-title">Storytelling</h5>
                         </div>
                         <ul class="list-group list-group-flush">
@@ -285,9 +285,9 @@
                     </div>
 
                     <div class="col">
-                        <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card">
+                        
+                        <div class="card-body ideate">
                             <h5 class="card-title">Information Architecture</h5>
                         </div>
                         <ul class="list-group list-group-flush">
@@ -330,9 +330,9 @@
                     <!-- prototype cards -->
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
-                        <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card">
+                        
+                        <div class="card-body prototype">
                             <h5 class="card-title">Atomic Design</h5>
                         </div>
                         <ul class="list-group list-group-flush">
@@ -346,9 +346,9 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card">
+                        
+                        <div class="card-body prototype">
                             <h5 class="card-title">Prototyping</h5>
                           </div>
                         <ul class="list-group list-group-flush">
@@ -363,9 +363,9 @@
                     </div>
 
                     <div class="col">
-                        <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card">
+                        
+                        <div class="card-body prototype">
                             <h5 class="card-title">Design Systems</h5>
                         </div>
                         <ul class="list-group list-group-flush">
@@ -407,9 +407,9 @@
                 <!-- test cards -->
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         <div class="col">
-                          <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
+                          <div class="card">
+                            
+                            <div class="card-body test">
                               <h5 class="card-title">Preparation</h5>
                             </div>
                             <ul class="list-group list-group-flush">
@@ -420,9 +420,9 @@
                           </div>
                         </div>
                         <div class="col">
-                          <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
+                          <div class="card">
+                            
+                            <div class="card-body test">
                               <h5 class="card-title">Interface Evaluation</h5>
                             </div>
                             <ul class="list-group list-group-flush">
@@ -438,9 +438,9 @@
                         </div>
 
                         <div class="col">
-                          <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
+                          <div class="card">
+                           
+                            <div class="card-body test">
                               <h5 class="card-title">User Testing</h5>
                             </div>
                             <ul class="list-group list-group-flush">
