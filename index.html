@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UX Navigator</title>
     
+    <!--font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400&family=Major+Mono+Display&display=swap" rel="stylesheet">
+
     <!--css link-->
     <link rel="stylesheet" href="css/style.css"> 
     
@@ -23,8 +28,9 @@
         <!-- very top name and search bar -->
         <nav class="navbar sticky-top navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img alt="Logo">UX Navigator</a>
+              <a class="navbar-brand h1font" href="index.html">
+                <img src="images/logo.png" alt="Logo">
+                Ux Navigator</a>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
@@ -49,7 +55,7 @@
     </header>
 
     <div class="banner">
-      <h1>Improving The Double Diamond Design Process</h1>
+      <h1 class="h1font">Improving The Double Diamond Design Process</h1>
     </div>
     <!------------- hero image ------------------>
 
@@ -89,28 +95,19 @@
     <!----------------- main part ---------------------------------->
 
     <main>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            
-            <!-- Design Process -->
-            <div class="accordion-item" id="designprocess">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseZero" aria-expanded="false" aria-controls="flush-collapseZero">
-                  Design Process
-                </button>
-              </h2>
-              <div id="flush-collapseZero" class="accordion-collapse collapse" aria-labelledby="flush-headingZero" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-              </div>
 
-            </div>
+
+
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
 
             <!-- Empathize -->
             <div class="accordion-item" id="empathize">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <img src="images/image-source.jpg" alt="Image Alt Text" class="mr-3">
+                    <img src="images/empathize-icon.svg" alt="Double Diamond with Empathize section highlighted" class="mr-3">
                     <div>
-                        <h3>Empathize Phase</h3>
+                        <h3 class="h3font">Empathize Phase</h3>
                         <p style="margin-left: 30px;">Understand and connect with users' needs, emotions, and experiences</p>
                     </div>
                 </button>
@@ -170,9 +167,9 @@
             <div class="accordion-item" id="define">
               <h2 class="accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  <img src="images/file.jpg" alt="Image Alt Text" class="mr-3">
+                  <img src="images/define-icon.png" alt="Double Diamond with Define section highlighted" class="mr-3">
                   <div>
-                    <h3>Define Phase</h3>
+                    <h3 class="h3font">Define Phase</h3>
                     <p style="margin-left: 30px;">Use what you've learned to identify the main problem needing to be solved</p>
                   </div>
                 </button>
@@ -224,9 +221,9 @@
             <div class="accordion-item" id="ideate">
               <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  <img src="images/image-source.jpg" alt="Image Alt Text" class="mr-3">
+                  <img src="images/ideate-icon.png" alt="Double Diamond with Ideate section highlighted" class="mr-3">
                   <div>
-                    <h3>Ideate Phase</h3>
+                    <h3 class="h3font">Ideate Phase</h3>
                     <p style="margin-left: 30px;">Generate a wide range of ideas and potential solutions for the defined problem</p>
                   </div>
                 </button>
@@ -311,9 +308,9 @@
             <div class="accordion-item" id = "prototype">
                 <h2 class="accordion-header" id="flush-headingFour">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    <img src="images/image-source.jpg" alt="Image Alt Text" class="mr-3">
+                    <img src="images/prototype-icon.png" alt="Double Diamond with Prototype section highlighted" class="mr-3">
                     <div>
-                      <h3>Prototype Phase</h3>
+                      <h3 class="h3font">Prototype Phase</h3>
                       <p style="margin-left: 30px;">Create a simplified, testable version of your ideas</p>
                     </div>
                   </button>
@@ -386,9 +383,9 @@
             <div class="accordion-item" id = "test">
                 <h2 class="accordion-header" id="flush-headingFive">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    <img src="images/image-source.jpg" alt="Image Alt Text" class="mr-3">
+                    <img src="images/test-icon.png" alt="Double Diamond with Test section highlighted" class="mr-3">
                     <div>
-                      <h3>Test Phase</h3>
+                      <h3 class="h3font">Test Phase</h3>
                       <p style="margin-left: 30px;">Gather feedback and make improvements on your design</p>
                     </div>
                   </button>
@@ -471,7 +468,7 @@
 
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
+    <footer class="text-center text-lg-start text-muted">
       <!-- Section: Social media -->
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <!-- Left -->
@@ -513,12 +510,11 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>UX Navigator
+              <h6 class="fw-bold mb-4 h3font">
+                <i class="fas fa-gem me-3"></i>Ux Navigator
               </h6>
               <p>
-                Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit.
+                Join us on the journey to redefine digital experiences.
               </p>
             </div>
             <!-- Grid column -->
@@ -583,11 +579,6 @@
       </section>
       <!-- Section: Links  -->
 
-      <!-- Copyright -->
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-      </div>
       <!-- end of copyright -->
     </footer>
 

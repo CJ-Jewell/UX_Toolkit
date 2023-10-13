@@ -23,6 +23,25 @@ html {
 }
 
 
+.h1font { 
+    font-family: 'Major Mono Display', monospace;
+    font-size: 30px;
+    
+    
+}
+
+.h3font {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 32px;
+}
+
+p {
+    font-family: 'M PLUS Code Latin', monospace;
+}
+
+
+
+
 /* navigation buttons */
 .btndesignproc {
     background: linear-gradient(135deg, #808080, #333333);
