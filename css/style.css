@@ -14,8 +14,9 @@ header {
     background-color: #152730;
 }
 
-html {
-    background-color: #152730;
+html, .hero-section, .accord, .design {
+    background-color: #152730 !important;
+    color: #8D8D8D;
 }
 
 .topnav {
@@ -26,7 +27,6 @@ html {
 .h1font { 
     font-family: 'Major Mono Display', monospace;
     font-size: 30px;
-    
     
 }
 
@@ -39,7 +39,16 @@ p {
     font-family: 'M PLUS Code Latin', monospace;
 }
 
-
+.bodyfont {
+    color: #8D8D8D;
+    font-family: M PLUS Code Latin;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
 
 
 /* navigation buttons */
@@ -145,15 +154,71 @@ p {
     background-color: #152730;
     justify-content: center;
     align-content: center;
-    color: rgb(211, 211, 211);
     padding: 5px;
     
 }
 
+.bannerfont {
+    background: linear-gradient(90deg, #E3A15F 0%, #D47967 13.21%, #C14970 27.65%, #A678A7 40.28%, #88B1E2 58.32%, #6EB9A2 71.55%, #579988 85.59%, #4B74C5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: plus-lighter;   
+}
+
+/* hero section */
+
+.hero-section {
+    display: inline-flex;
+    align-items: center;
+    gap: 55px;
+    padding: 80px;
+}
+
+.hero-text {
+    flex: 1; /* Takes up available space in the row */
+}
+
+.hero-text h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1; /* Takes up available space in the row */
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* design section */
+.design {
+    padding: 20px;
+}
 
 
 
-/* */
+/* accordian section */
+
+.accord {
+    background-color: blue;
+    padding: 20px;
+}
+
+.accordbutton {
+    background-color: #152730 !important;
+    color: #D8D8D8 !important;
+}
+
 .empathize {
     background: linear-gradient(138deg, #6AC3F8 31.43%, rgba(106, 195, 248, 0.50) 31.43%, rgba(106, 195, 248, 0.30) 50.84%, rgba(106, 195, 248, 0.50) 76.2%, #6AC3F8 76.2%);
 }

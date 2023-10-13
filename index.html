@@ -33,7 +33,7 @@
               <a class="navbar-brand h1font" href="index.html">
                 <img src="images/logo.png" alt="Logo">
                 Ux Navigator</a>
-                <form class="d-flex" role="search">
+                <form class="d-flex bodyfont" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
@@ -44,50 +44,38 @@
         <div>
 
           <!-- nav buttons -->
-          <a href="#designprocess"><button type="button" class="btndesignproc">Design Process</button></a>
-          <a href="#empathize"><button type="button" class="btnempathize">Empathize</button></a>
-          <a href="#define"><button type="button" class="btndefine">Define</button></a>
-          <a href="#ideate"><button type="button" class="btnideate">Ideate</button></a>
-          <a href="#prototype"><button type="button" class="btnproto">Prototype</button></a>
-          <a href="#test"><button type="button" class="btntest">Test</button></a>
-          <button type="button" class="btncomm">Community</button>
+          <a href="#designprocess"><button type="button" class="btndesignproc bodyfont">Design Process</button></a>
+          <a href="#empathize"><button type="button" class="btnempathize bodyfont">Empathize</button></a>
+          <a href="#define"><button type="button" class="btndefine bodyfont">Define</button></a>
+          <a href="#ideate"><button type="button" class="btnideate bodyfont">Ideate</button></a>
+          <a href="#prototype"><button type="button" class="btnproto bodyfont">Prototype</button></a>
+          <a href="#test"><button type="button" class="btntest bodyfont">Test</button></a>
+          <button type="button" class="btncomm bodyfont">Community</button>
 
       </div>
 
     </header>
 
     <div class="banner">
-      <h1 class="h1font">Improving The Double Diamond Design Process</h1>
+      <h1 class="bannerfont">Improving The Double Diamond Design Process</h1>
     </div>
     <!------------- hero image ------------------>
 
-        <div class="d-flex min-vh-100" lc-helper="background" style="background:url(https://images.unsplash.com/34/ddTzoX58Q153kjaitXl4_ny.jpg?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;h=768&amp;fit=crop&amp;ixid=eyJhcHBfaWQiOjM3ODR9)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
-            <div class="align-self-center text-center text-light col-md-8 offset-md-2">
-                <div class="lc-block mb-4">
-                    <div editable="rich">
-                        <h1 class="display-1 fw-bolder">The Design Process</h1>
-                    </div>
-                </div>
-    
-                <div class="lc-block">
-                    <div editable="rich">
-                        <p class="lead">This text will include our mission statement.</p>
-                    </div>
-                </div>
-    
-                <div class="lc-block">
-                    <svg onclick="if (!document.querySelector('body').classList.contains('livecanvas-is-editing') ) this.closest('section').nextElementSibling.scrollIntoView({ behavior: 'smooth'  });" width="4em" height="4em" viewBox="0 0 16 16" class="text-light" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
-                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"></path>
-                    </svg>
-    
-                    <!-- for Safari support  -->
-                    <script async="" src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
-                </div>
-            </div>
-        </div>
+        <section class="hero-section">
+          <div class="hero-text">
+              <p>At UX Navigator, our mission is to empower UX designers by providing them with comprehensive guidance through every phase of the design process.</p>
 
-        <div>
+              <p>We strive to foster creativity, cultivate expertise, and inspire innovation - one interaction at a time.</p>
+
+              <p>Start Now</p>
+              <img src="/images/ep-arrow-down.png" alt="Hero Image">
+          </div>
+          <div class="hero-image">
+              <img src="/images/hero-gif-4.png" alt="Hero Image">
+          </div>
+      </section>
+
+        <div class="design">
           <p>The design thinking process is iterative, flexible, and focused on collaboration between designers and users.</p>
           <p>The prcess is nonlinear. It folds back on itself and jumps around the process while solving human-centered problems. Use this process when you want to create a new product or service, or to improve a product or service that already exists.</p>
           <p>The design thinking process can transform the way organizations develop products, services, processes, and strategies. It can develop people's creative potential, and can spur innovation.</p>
@@ -101,12 +89,12 @@
 
 
 
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion accordion-flush accord" id="accordionFlushExample">
 
             <!-- Empathize -->
             <div class="accordion-item" id="empathize">
               <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <button class="accordion-button collapsed d-flex align-items-center accordbutton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     <img src="images/empathize-icon.svg" alt="Double Diamond with Empathize section highlighted" class="mr-3">
                     <div>
                         <h3 class="h3font">Empathize Phase</h3>
@@ -168,7 +156,7 @@
             <!-- Define -->
             <div class="accordion-item" id="define">
               <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <button class="accordion-button collapsed accordbutton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                   <img src="images/define-icon.png" alt="Double Diamond with Define section highlighted" class="mr-3">
                   <div>
                     <h3 class="h3font">Define Phase</h3>
@@ -222,7 +210,7 @@
             <!-- Ideate -->
             <div class="accordion-item" id="ideate">
               <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <button class="accordion-button collapsed accordbutton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                   <img src="images/ideate-icon.png" alt="Double Diamond with Ideate section highlighted" class="mr-3">
                   <div>
                     <h3 class="h3font">Ideate Phase</h3>
@@ -309,7 +297,7 @@
             <!-- Prototype -->
             <div class="accordion-item" id = "prototype">
                 <h2 class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  <button class="accordion-button collapsed accordbutton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                     <img src="images/prototype-icon.png" alt="Double Diamond with Prototype section highlighted" class="mr-3">
                     <div>
                       <h3 class="h3font">Prototype Phase</h3>
@@ -384,7 +372,7 @@
             <!-- Test -->
             <div class="accordion-item" id = "test">
                 <h2 class="accordion-header" id="flush-headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  <button class="accordion-button collapsed accordbutton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                     <img src="images/test-icon.png" alt="Double Diamond with Test section highlighted" class="mr-3">
                     <div>
                       <h3 class="h3font">Test Phase</h3>
@@ -462,7 +450,7 @@
               </div>
 
 
-          </div>
+            </div>
     </main>
 
 
@@ -472,7 +460,7 @@
     <!-- Footer -->
     <footer class="text-center text-lg-start text-muted">
       <!-- Section: Social media -->
-      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom design">
         <!-- Left -->
         <div class="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
@@ -505,7 +493,7 @@
       <!-- Section: Social media -->
 
       <!-- Section: Links  -->
-      <section class="">
+      <section class="design">
         <div class="container text-center text-md-start mt-5">
           <!-- Grid row -->
           <div class="row mt-3">
