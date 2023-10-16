@@ -169,24 +169,39 @@ p {
 /* hero section */
 
 .hero-section {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 55px;
     padding: 80px;
 }
 
-.hero-text {
+.heroflex {
     flex: 1; /* Takes up available space in the row */
+    margin-left: 2%;
+
+}
+
+.hero-text {
+    margin-bottom: 60px;
 }
 
 .hero-text h1 {
     font-size: 24px;
     margin-bottom: 10px;
+    font-family: Major Mono Display;
+    
 }
 
 .hero-text p {
-    font-size: 16px;
     margin-bottom: 20px;
+    font-family: Major Mono Display;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 1px;
+    
 }
 
 .hero-image {
@@ -199,12 +214,104 @@ p {
     height: auto;
 }
 
+.startnow {
+    font-family: M PLUS Code Latin;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
 
-/* design section */
-.design {
-    padding: 20px;
 }
 
+.startnow img {
+    width: 75px;
+    height: 79px;
+    flex-shrink: 0;
+}
+
+/* design section */
+.designproc {
+    background-color:#152730;
+
+}
+
+.design p, ol {
+    margin-left: 12%;
+    margin-right: 12%;
+    color: #FFF;
+    font-family: Major Mono Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 1px;
+
+}
+
+.designbtndiv {
+    justify-content: center;
+    align-items: center;
+}
+
+.designbtn {
+    color: #000;
+    font-family: M PLUS Code Latin;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    text-transform: capitalize;
+    display: flex;
+    width: 488px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #E3A15F 0%, #D47967 13.21%, #C14970 27.65%, #A678A7 40.28%, #88B1E2 58.32%, #6EB9A2 71.55%, #579988 85.59%, #4B74C5 100%);
+    mix-blend-mode: plus-lighter;
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.50) inset, 4px 0px 4px 0px rgba(0, 0, 0, 0.50) inset;
+}
+
+.designhead {
+
+    padding: 20px;
+}
+/* design process */
+
+.designhead h1 {
+    font-family: M PLUS Code Latin;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #E3A15F 0%, #D47967 13.21%, #C14970 27.65%, #A678A7 40.28%, #88B1E2 58.32%, #6EB9A2 71.55%, #579988 85.59%, #4B74C5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: plus-lighter;
+    margin:0;
+}
+
+.designhead svg {
+    stroke-width: 10px;
+    stroke: #6AC3F8;
+    mix-blend-mode: hard-light;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.40));
+    height: 10px;
+    flex-shrink: 0;
+}
+
+.designproc img {
+    width: 84%;
+    margin: 8%;
+}
 
 
 /* accordian section */
