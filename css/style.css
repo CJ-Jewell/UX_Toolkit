@@ -1,28 +1,22 @@
-#here {
-    background-color: red;
-}
 
-#there {
-    background-color: blueviolet;
-}
 
-#middle {
-    background-color: turquoise;
-}
-
-header {
+header, footer {
     background-color: #152730;
 }
 
-html, .hero-section, .accord, .design {
+html, .hero-section, .accord, .design .main, .container {
     background-color: #152730 !important;
-    color: #8D8D8D;
+    color: #FFFFFF;
 }
 
 .topnav {
     padding: 10px;
 }
 
+.foothead {
+    font-family: 'Major Mono Display', monospace;
+    color: #FFFFFF;
+}
 
 .h1font { 
     font-family: 'Major Mono Display', monospace;
@@ -35,8 +29,12 @@ html, .hero-section, .accord, .design {
     font-size: 32px;
 }
 
-p {
+p, .p {
     font-family: 'M PLUS Code Latin', monospace;
+}
+
+.body {
+    background-color: #152730;
 }
 
 .bodyfont {
@@ -316,18 +314,35 @@ p {
 
 /* accordian section */
 
+.accordian {
+    background-color: #152730 !important;
+}
+
 .accord {
-    background-color: blue;
     padding: 20px;
 }
 
 .accordbutton {
     background-color: #152730 !important;
-    color: #D8D8D8 !important;
+    color: #FFFFFF !important;
+}
+
+#flush-collapseOne, #flush-collapseTwo, #flush-collapseThree, #flush-collapseFour, #flush-collapseFive {
+    background-color: #152730;
+    color: #FFFFFF;
+    font-family: M PLUS Code Latin;
+    
+}
+
+.card, .list-group-item {
+    background-color: #152730;
+    color: #FFFFFF;
 }
 
 .empathize {
+    border-radius: 8px 8px 0px 0px;
     background: linear-gradient(138deg, #6AC3F8 31.43%, rgba(106, 195, 248, 0.50) 31.43%, rgba(106, 195, 248, 0.30) 50.84%, rgba(106, 195, 248, 0.50) 76.2%, #6AC3F8 76.2%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .define {
@@ -352,6 +367,12 @@ p {
 #card {
     width: 20rem;
 }
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
 
 /* Scaling Dots Animation */
 @keyframes scaling-dots {
