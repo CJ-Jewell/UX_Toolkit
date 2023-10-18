@@ -81,6 +81,8 @@ p, .p, li {
     gap: 10px;
 }
 
+
+
 .btndesignproc {
     background: linear-gradient(135deg, #808080, #333333);
     color: white;
@@ -458,6 +460,12 @@ p, .p, li {
     height: 527px;
 }
 
+.list-unstyled {
+    color: #FFFFFF !important;
+}
+.navtext {
+    color: #FFFFFF !important;
+}
 
 
 /* Scaling Dots Animation */
