@@ -1,161 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UX Toolkit</title>
-    
-    <!--css link-->
-    <link rel="stylesheet" href="../css/style.css"> 
-    
-    <!--bootstrap link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UX Navigator</title>
+
+  <!--font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400&family=Major+Mono+Display&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/MajorMonoDisplay-Regular.ttf">
+  <link rel="stylesheet" href="../fonts/MPLUSCodeLatin-VariableFont_wdth,wght.ttf">
+
+  <!--bootstrap link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!--css link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
 
+  <header class="sticky-top topnav">
+
     <!-- very top name and search bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar sticky-top navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Name of Site</a>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+        <a class="navbar-brand h1font" href="../index.html">
+          <img src="../images/logo dark.png" alt="Logo of double diamond design process"></a>
+
+        <!-- nav buttons -->
+        <a href="#designprocess"><button type="button" class="btndesignproc bodyfont">Design Process</button></a>
+        <a href="#empathize"><button type="button" class="btnempathize bodyfont">Empathize</button></a>
+        <a href="#define"><button type="button" class="btndefine bodyfont">Define</button></a>
+        <a href="#ideate"><button type="button" class="btnideate bodyfont">Ideate</button></a>
+        <a href="#prototype"><button type="button" class="btnproto bodyfont">Prototype</button></a>
+        <a href="#test"><button type="button" class="btntest bodyfont">Test</button></a>
+        <button type="button" class="btncomm bodyfont">Community</button>
+
+        <form class="d-flex bodyfont" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+
       </div>
     </nav>
-  
-  <!-- nav buttons -->
-  <button type="button" class="btn btn-outline-primary">Design Process</button>
-  <button type="button" class="btn btn-outline-secondary">Empathize</button>
-  <button type="button" class="btn btn-outline-success">Define</button>
-  <button type="button" class="btn btn-outline-danger">Ideate</button>
-  <button type="button" class="btn btn-outline-warning">Prototype</button>
-  <button type="button" class="btn btn-outline-info">Test</button>
-  <button type="button" class="btn btn-outline-dark">Community</button>
 
-</header>
+  </header>
 
-<!-- main content -->
+  <!-- main content -->
 
-    <div class="container-fluid">
-      
-        <div class="row">
-            <div class="col-md-3">
-              
-                <!-- Left Sidebar -->
-                <div class="navbar" id = "there">
+  <div class="container-fluid">
 
-                  <div class="flex-shrink-0 p-3">
-                    
-                    <a href="../index.html" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-                      <img alt="Diamond">
-                      <span class="fs-5 fw-semibold">Test Phase</span>
-                    </a>
-                    <!-- ul level 2 and 3 left nav -->
-                    <ul class="list-unstyled ps-0">
-                      <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-                          Preparation
-                        </button>
-                        <div class="collapse show" id="home-collapse">
-                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" class="link-dark rounded">Testing Plans & Templates</a></li>
-                            <li><a href="#" class="link-dark rounded">Tools</a></li>
-                            <li><a href="#" class="link-dark rounded">Documentation</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
-                          Interface Evaluation
-                        </button>
-                        <div class="collapse show" id="dashboard-collapse" style="">
-                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" class="link-dark rounded">Accessibility Testing</a></li>
-                            <li><a href="#" class="link-dark rounded">A/B Testing</a></li>
-                            <li><a href="#" class="link-dark rounded">Card Sorting</a></li>
-                            <li><a href="#" class="link-dark rounded">Tree Testing</a></li>
-                            <li><a href="#" class="link-dark rounded">5-Second Test</a></li>
-                            <li><a href="#" class="link-dark rounded">Comparative Analyses</a></li>
-                            <li><a href="#" class="link-dark rounded">KPI Analysis</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
-                          User Testing
-                        </button>
-                        <div class="collapse show" id="orders-collapse" style="">
-                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" class="link-light rounded">Usability Testing</a></li>
-                            <li><a href="#" class="link-dark rounded">Guerrilla User Testing</a></li>
-                            <li><a href="#" class="link-dark rounded">Remote User Testing</a></li>
-                            <li><a href="#" class="link-dark rounded">Task Analysis</a></li>
-                            <li><a href="#" class="link-dark rounded">Eye-tracking & Heat-maps</a></li>
-                            <li><a href="#" class="link-dark rounded">First-Click Testing</a></li>
-                          </ul>
-                        </div>
-                      </li>
+    <div class="row">
+      <!-- side navigation -->
+      <div class="col-md-3 navbar">
+
+
+
+        <div class="col-md-3">
+
+          <!-- Left Sidebar -->
+          <div class="navbar">
+            <!-- Prototype -->
+            <div class="flex-shrink-0 p-3">
+              <h4>Prototype</h4>
+
+              <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#preparation-collapse" aria-expanded="true">
+                    Atomic Design
+                  </button>
+                  <div class="collapse show" id="preparation-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">Componenets</a></li>
+                      <li><a href="#" class="link-dark rounded">Iconography</a></li>
+                      <li><a href="#" class="link-dark rounded">Imagery</a></li>
+                      <li><a href="#" class="link-dark rounded">Mood Boards</a></li>
+                      <li><a href="#" class="link-dark rounded">Style Guides</a></li>
+                      <li><a href="#" class="link-dark rounded">Style Tiles</a></li>
                     </ul>
-                  </div> <!-- end of class = "flex-shrink- p3 col-md-3" div -->
-          
-                </div>
-
-              </div>
-
-            <div class="col-md-9">
-              <!-- Content for the right side -->
-              <h1>Usability Testing</h1>
-              <p>Guerrilla user testing is a rapid, low-cost method to evaluate how effective an intereface is.</p>
-              <p>What makes guerrilla testing unique is that participants are not recruited in advance. Instead, members of the public are approached by those conducting the study in the real world.</p>
-              <img alt="Example Image 1">
-              <img alt="Example Image2">
-              <div>
-                <a href="UsabilityTestingTemplates.html"> 
-                  <button type="button" class="btn btn-outline-secondary">View Templates</button>
-                </a>
-              </div>
-              <h5>When:</h5>
-              <ul>
-                <li>Identifying/correcting generic usability issues early in a project life cycle.</li>
-                <li>Getting quick baseline measures of an existing website, app, or mobile experience, including informal user research and insights about user expectations.</li>
-                <li>Validating common tasks, such as online shopping or completing a form, where domain-specific knowledge isn't required (instead of navigating a complex dashboard for a niche user persona).</li>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+                    data-bs-target="#interface-evaluation-collapse" aria-expanded="true">
+                    Prototyping
+                  </button>
+                  <div class="collapse show" id="interface-evaluation-collapse" style="">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">Developer Handoff</a></li>
+                      <li><a href="#" class="link-dark rounded">Digital Prototyping</a></li>
+                      <li><a href="#" class="link-dark rounded">Interactive Design</a></li>
+                      <li><a href="#" class="link-dark rounded">Iteration Process</a></li>
+                      <li><a href="#" class="link-dark rounded">Paper Prototyping</a></li>
+                      <li><a href="#" class="link-dark rounded">Responsive Design</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+                    data-bs-target="#user-testing-collapse" aria-expanded="true">
+                    Software
+                  </button>
+                  <div class="collapse show" id="user-testing-collapse" style="">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">Adobe</a></li>
+                      <li><a href="#" class="link-dark rounded">Figma</a></li>
+                      <li><a href="#" class="link-dark rounded">Miro</a></li>
+                      <li><a href="#" class="link-dark rounded">InVision</a></li>
+                    </ul>
+                  </div>
+                </li>
               </ul>
-              <h5>Why:</h5>
-              <ul>
-                <li>The goal is to identify any usability problems, collect qualitative and quantitative data, and determine the participant's satisfaction with the product.</li>
+            </div> <!-- end of class = "flex-shrink- p3 col-md-3" div -->
+
+          </div>
+
+        </div>
+
+        <!-- Test -->
+        <div class="col-md-3">
+
+          <!-- Left Sidebar -->
+          <div class="navbar">
+
+            <div class="flex-shrink-0 p-3">
+
+              <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#preparation-collapse" aria-expanded="true">
+                    Preparation
+                  </button>
+                  <div class="collapse show" id="preparation-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">Testing Plans & Templates</a></li>
+                      <li><a href="#" class="link-dark rounded">Tools</a></li>
+                      <li><a href="#" class="link-dark rounded">Documentation</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+                    data-bs-target="#interface-evaluation-collapse" aria-expanded="true">
+                    Interface Evaluation
+                  </button>
+                  <div class="collapse show" id="interface-evaluation-collapse" style="">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-dark rounded">Accessibility Testing</a></li>
+                      <li><a href="#" class="link-dark rounded">A/B Testing</a></li>
+                      <li><a href="#" class="link-dark rounded">Card Sorting</a></li>
+                      <li><a href="#" class="link-dark rounded">Tree Testing</a></li>
+                      <li><a href="#" class="link-dark rounded">5-Second Test</a></li>
+                      <li><a href="#" class="link-dark rounded">Comparative Analyses</a></li>
+                      <li><a href="#" class="link-dark rounded">KPI Analysis</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+                    data-bs-target="#user-testing-collapse" aria-expanded="true">
+                    User Testing
+                  </button>
+                  <div class="collapse show" id="user-testing-collapse" style="">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="link-light rounded">Usability Testing</a></li>
+                      <li><a href="#" class="link-dark rounded">Guerrilla User Testing</a></li>
+                      <li><a href="#" class="link-dark rounded">Remote User Testing</a></li>
+                      <li><a href="#" class="link-dark rounded">Task Analysis</a></li>
+                      <li><a href="#" class="link-dark rounded">Eye-tracking & Heat-maps</a></li>
+                      <li><a href="#" class="link-dark rounded">First-Click Testing</a></li>
+                    </ul>
+                  </div>
+                </li>
               </ul>
-              <h5>How:</h5>
-              <ol>
-                <li>Planning User Testing</li>
-                <li>Recruiting Participants</li>
-                <li>Conducting the Usability Test</li>
-                <li>Analyzing the Usability Test</li>
-                <li>Reporting the Usability Test Results</li>
-              </ol>
+            </div> <!-- end of class = "flex-shrink- p3 col-md-3" div -->
 
-              <h4>Examples Trending</h4>
-              <button type="button" class="btn btn-outline-secondary">Post Example</button>
+          </div>
 
-              <h4>Community Questions</h4>
-              <button type="button" class="btn btn-outline-secondary">Post Question</button>
+        </div>
 
-            </div>
-
-        </div> <!-- end of class = "row" div-->
       </div>
 
+      <!---------------------------- Right side ---------------------->
+
+      <div class="col-md-9">
+        <!-- Content for the right side -->
+        <h1>Usability Testing</h1>
+        <p>Guerrilla user testing is a rapid, low-cost method to evaluate how effective an intereface is.</p>
+        <p>What makes guerrilla testing unique is that participants are not recruited in advance. Instead, members of
+          the public are approached by those conducting the study in the real world.</p>
+        <img alt="Example Image 1">
+        <img alt="Example Image2">
+        <div>
+          <a href="UsabilityTestingTemplates.html">
+            <button type="button" class="btn btn-outline-secondary">View Templates</button>
+          </a>
+        </div>
+        <h5>When:</h5>
+        <ul>
+          <li>Identifying/correcting generic usability issues early in a project life cycle.</li>
+          <li>Getting quick baseline measures of an existing website, app, or mobile experience, including informal user
+            research and insights about user expectations.</li>
+          <li>Validating common tasks, such as online shopping or completing a form, where domain-specific knowledge
+            isn't required (instead of navigating a complex dashboard for a niche user persona).</li>
+        </ul>
+        <h5>Why:</h5>
+        <ul>
+          <li>The goal is to identify any usability problems, collect qualitative and quantitative data, and determine
+            the participant's satisfaction with the product.</li>
+        </ul>
+        <h5>How:</h5>
+        <ol>
+          <li>Planning User Testing</li>
+          <li>Recruiting Participants</li>
+          <li>Conducting the Usability Test</li>
+          <li>Analyzing the Usability Test</li>
+          <li>Reporting the Usability Test Results</li>
+        </ol>
+
+        <h4>Examples Trending</h4>
+        <button type="button" class="btn btn-outline-secondary">Post Example</button>
+
+        <h4>Community Questions</h4>
+        <button type="button" class="btn btn-outline-secondary">Post Question</button>
+
+      </div>
+
+    </div> <!-- end of class = "row" div-->
+  </div>
 
 
-    <!-- Bootstrap JavaScript and jQuery libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="../js/index.js"></script>
+
+  <!-- Bootstrap JavaScript and jQuery libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="../js/index.js"></script>
 
 
 
 </body>
-</html> 
+
+</html>

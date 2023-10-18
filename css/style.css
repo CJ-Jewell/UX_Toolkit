@@ -1,5 +1,10 @@
 
 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 header, footer {
     background-color: #152730;
 }
@@ -9,10 +14,6 @@ html, .hero-section, .accord, .design .main, .container {
     color: #FFFFFF;
 }
 
-.topnav {
-    padding: 10px;
-    box-shadow: 0 0.25rem 1rem -0.5rem #000000;
-}
 
 .foothead {
     font-family: 'Major Mono Display', monospace;
@@ -34,7 +35,7 @@ p, .p {
     font-family: 'M PLUS Code Latin', monospace;
 }
 
-.body {
+body {
     background-color: #152730;
 }
 
@@ -49,14 +50,39 @@ p, .p {
     text-transform: capitalize;
 }
 
+/* top nav */
+.topnav {
+    box-shadow: 0rem 0.25rem 1rem -0.5rem #000000;
+    display: flex;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.topnav img {
+    height: 68px;
+    width: 152px;
+    flex-shrink: 0
+}
+
 
 /* navigation buttons */
+
+.container-fluid {
+    display: flex;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .btndesignproc {
     background: linear-gradient(135deg, #808080, #333333);
     color: white;
     border: none;
     padding: 5px 20px;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
@@ -70,7 +96,7 @@ p, .p {
     color: white;
     border: none;
     padding: 5px 20px;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
@@ -84,7 +110,7 @@ p, .p {
     color: white;
     border: none;
     padding: 5px 20px;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
@@ -98,7 +124,7 @@ p, .p {
     color: white;
     border: none;
     padding: 5px 20px;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
@@ -112,7 +138,7 @@ p, .p {
     color: white;
     border: none;
     padding: 5px 20px;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
@@ -126,7 +152,7 @@ p, .p {
     color: white;
     border: none;
     padding: 5px 20px;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
@@ -140,7 +166,7 @@ p, .p {
     color: white;
     border: none;
     padding: 5px 20px;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
@@ -165,6 +191,7 @@ p, .p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     mix-blend-mode: plus-lighter;   
+    font-weight: 700;
 }
 
 /* hero section */
@@ -335,6 +362,7 @@ p, .p {
     background-color: #152730 !important;
     color: #FFFFFF !important;
 }
+
 
 #flush-collapseOne, #flush-collapseTwo, #flush-collapseThree, #flush-collapseFour, #flush-collapseFive {
     background-color: #152730;
