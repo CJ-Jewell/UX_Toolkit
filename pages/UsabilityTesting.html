@@ -71,7 +71,7 @@
 
             <!-- The Design Process -->
             <div class="flex-shrink-0 p-3">
-              <h4>The Design Process</h4>
+              <h5><b>The Design Process</b></h5>
               <ul class="list-unstyled ps-0">
                 <li class="mb-1">
 
@@ -88,7 +88,7 @@
 
             <!-- Empathize -->
             <div class="flex-shrink-0 p-3">
-              <h4>Empathize</h4>
+              <h5><b>Empathize</b></h5>
 
               <ul class="list-unstyled ps-0">
                 <li class="mb-1">
@@ -131,7 +131,7 @@
 
             <!-- Define -->
             <div class="flex-shrink-0 p-3">
-              <h4>Ideate</h4>
+              <h5><b>Define</b></h5>
 
               <ul class="list-unstyled ps-0">
                 <li class="mb-1">
@@ -196,7 +196,8 @@
 
             <!-- Ideate -->
             <div class="flex-shrink-0 p-3">
-              <h4>Ideate</h4>
+              <h5><b>Ideate</b></h5>
+              
 
               <ul class="list-unstyled ps-0">
                 <li class="mb-1">
@@ -261,7 +262,7 @@
 
             <!-- Prototype -->
             <div class="flex-shrink-0 p-3">
-              <h4>Prototype</h4>
+              <h5><b>Prototype</b></h5>
 
               <ul class="list-unstyled ps-0">
                 <li class="mb-1">
@@ -315,7 +316,7 @@
 
             <!-- Test -->
             <div class="flex-shrink-0 p-3">
-              <h4>Test</h4>
+              <h5><b>Test</h5></b>
               <ul class="list-unstyled ps-0">
                 <li class="mb-1">
                   <button class="btn btn-toggle align-items-center rounded collapsed navtext" data-bs-toggle="collapse"
@@ -354,7 +355,7 @@
                   </button>
                   <div class="collapse show" id="user-testing-collapse" style="">
                     <ul class="btn-toggle-nav fw-normal pb-1 small">
-                      <li><a href="#" class="link-light rounded navtext">Usability Testing</a></li>
+                      <li><a href="#" class="link-light rounded navtext" id="utselected">Usability Testing</a></li>
                       <li><a href="#" class="link-dark rounded navtext">Guerrilla User Testing</a></li>
                       <li><a href="#" class="link-dark rounded navtext">Remote User Testing</a></li>
                       <li><a href="#" class="link-dark rounded navtext">Task Analysis</a></li>
@@ -374,15 +375,16 @@
       <!---------------------------- Right side ---------------------->
 
       <div class="col-md-9">
-        <div class="designhead">
+        <div class="uthead">
           <h1>Usability Testing</h1>
           <img src="../images/test-icon.png" alt="Double diamond design with the test phases labeled">
-          <div class="underline">
-          </div>
+
 
 
         </div>
-        <section class="hero-section">
+        <div class="utunderline">
+        </div>
+        <section class="ut-section">
 
           <div class="">
             <div class="">
@@ -409,43 +411,43 @@
         </div>
 
         <div class="utwhen">
-          <h1>When to Conduct Usability Tests</h1>
-          <div class="underline">
+          <h1 class="ut-headers">When to Conduct Usability Tests</h1>
+          <div class="utunderline">
           </div>
-          <p>While it's possible to conduct usability tests at various stages of a project, the ideal moments are
+          <p id="utselected">While it's possible to conduct usability tests at various stages of a project, the ideal moments are
             typically during the early and later phases of development.</p>
-          <u>Early Stage Usability Testing</u>
-          <p>Early-stage usability tests, often referred to as formative tests, are conducted during the initial design
+          <u class="ut-sub-head">Early Stage Usability Testing</u>
+          <p><b>Early-stage usability tests</b>, often referred to as formative tests, are conducted during the initial design
             and prototyping phases. This is when the focus is on concept validation and refining the user interface
             design.</p>
           <p>
             Conducting usability tests at this stage helps identify potential issues and gather feedback before
             extensive resources are invested in development. This can save time and money in the long run.</p>
 
-          <u>Late State Usability Testing</u>
-          <p>Later-stage usability tests, known as summative tests, occur when a near-final or functional prototype is
+          <u class="ut-sub-head">Late State Usability Testing</u>
+          <p><b>Later-stage usability tests</b>, known as summative tests, occur when a near-final or functional prototype is
             available. These tests assess the overall user experience and usability of the product.</p>
 
           <p>Late-stage tests are crucial for ensuring that the final design meets user expectations and performs well.
             Additionally, they can validate that any changes made based on earlier usability tests have been successful.
           </p>
 
-          <img src="../images/TestingImage.png" alt="Testing graphic">
+          <img src="../images/TestingImage.png" alt="Testing graphic" id="ut-whenimg">
         </div>
 
         <div class="utwhy">
-          <h1>Why Conduct A Usability Test?</h1>
-          <div class="underline">
+          <h1 class="ut-headers">Why Conduct A Usability Test?</h1>
+          <div class="utunderline">
           </div>
-
-          <ol>
+          <p id="utselected">Usability tests are conducted for a variety of important reasons, all geared toward creating a better user experience and achieving project success.</p>
+          <ol id="why1">
             <li><u>Identify User Pain Points</u></li>
           </ol>
 
-          <p>Early-stage usability tests, often referred to as formative tests, are conducted during the initial design
+          <p class="utwhyp">Early-stage usability tests, often referred to as formative tests, are conducted during the initial design
             and prototyping phases. This is when the focus is on concept validation and refining the user interface
             design.</p>
-          <p>
+          <p class="utwhyp">
             Conducting usability tests at this stage helps identify potential issues and gather feedback before
             extensive resources are invested in development. This can save time and money in the long run.</p>
         </div>

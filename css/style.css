@@ -37,11 +37,14 @@ html, body, .hero-section, .accord, .design .main, .container {
     font-size: 32px;
 }
 
-p, .p, li {
+p, .p, li, h5 {
     font-family: 'M PLUS Code Latin', monospace;
     color: #FFFFFF;
 }
 
+a {
+    text-decoration: none;
+}
 
 .bodyfont {
     color: #FFFFFF;
@@ -450,9 +453,18 @@ p, .p, li {
 }
 
 /* Usability Testing page */
+
+.navbar {
+    border-right: 1px solid #D03771;
+}
+
 .utimg img {
     width: 450px;
     height: 450px;
+}
+
+.utwhen {
+    padding-top: 50px;
 }
 
 .utwhen img {
@@ -460,13 +472,101 @@ p, .p, li {
     height: 527px;
 }
 
-.list-unstyled {
-    color: #FFFFFF !important;
-}
+
 .navtext {
     color: #FFFFFF !important;
+    size: 18px;
+
 }
 
+#utselected {
+    color:  #D03771 !important;
+}
+
+.uthead {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.uthead h1 {
+    flex: 1;
+    font-family: "M PLUS Code Latin";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #E3A15F 0%, #D47967 13.21%, #C14970 27.65%, #A678A7 40.28%, #88B1E2 58.32%, #6EB9A2 71.55%, #579988 85.59%, #4B74C5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: plus-lighter;
+    margin-right: -10px;
+    padding-left: 50px;
+}
+
+.utunderline {
+    height: 10px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background-color: #D03771;
+
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.40));
+    margin-bottom: 10px;
+}
+
+.utwhen p, .utwhy p {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.ut-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-left: 50px;
+
+    padding-bottom: 50px;
+}
+
+.ut-headers {
+    color: #FFF;
+    font-family: 'M PLUS Code Latin';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-transform: capitalize;
+    padding-left: 50px;
+}
+.ut-sub-head {
+    color: #FFF;
+    font-family: 'M PLUS Code Latin';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 142.857% */
+    letter-spacing: 1.05px;
+    padding-left: 30px;
+}
+
+#ut-whenimg {
+    width: 749px;
+    height: 527px;
+    flex-shrink: 0;
+}
+
+#why1 {
+    padding-left: 0px;
+    padding-bottom: 0px !important;
+}
+
+.utwhyp {
+    padding-left: 90px !important;
+}
 
 /* Scaling Dots Animation */
 @keyframes scaling-dots {
