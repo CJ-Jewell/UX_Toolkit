@@ -68,7 +68,7 @@ a {
 }
 
 .topnav img {
-    height: 68px;
+    height: 89px;
     width: 152px;
     flex-shrink: 0
 }
@@ -454,8 +454,8 @@ a {
 
 /* Usability Testing page */
 
-.navbar {
-    border-right: 1px solid #D03771;
+.left {
+    border-right: 2px solid #D03771;
 }
 
 .utimg img {
