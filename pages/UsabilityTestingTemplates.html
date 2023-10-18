@@ -4,43 +4,470 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UX Toolkit</title>
-    
-    <!--css link-->
-    <link rel="stylesheet" href="../css/style.css"> 
-    
+    <title>UX Navigator</title>
+    <link rel="icon" href="../images/Duck.ico" type="image/x-icon" sizes="16x16 32x32">
+
+
+    <!--font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400&family=Major+Mono+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Fonts/MajorMonoDisplay-Regular.ttf">
+    <link rel="stylesheet" href="Fonts/MPLUSCodeLatin-VariableFont_wdth,wght.ttf">
+
     <!--bootstrap link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--css link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
 
-    <!-- very top name and search bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Name of Site</a>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <header class="sticky-top topnav">
+
+        <!-- very top name and search bar -->
+        <nav class="navbar sticky-top navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand h1font" href="index.html">
+                    <img src="../images/logo_dark_title.png" alt="Logo of double diamond design process"></a>
+
+                <!-- nav buttons -->
+                <a href="#designprocess"><button type="button" class="btndesignproc bodyfont">Design
+                        Process</button></a>
+                <a href="#empathize"><button type="button" class="btnempathize bodyfont">Empathize</button></a>
+                <a href="#define"><button type="button" class="btndefine bodyfont">Define</button></a>
+                <a href="#ideate"><button type="button" class="btnideate bodyfont">Ideate</button></a>
+                <a href="#prototype"><button type="button" class="btnproto bodyfont">Prototype</button></a>
+                <a href="#test"><button type="button" class="btntest bodyfont">Test</button></a>
+                <button type="button" class="btncomm bodyfont">Community</button>
+
+                <form class="d-flex bodyfont" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- main content -->
+
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <!-- side navigation -->
+            <div class="col-md-3">
+
+                <div class="" id="">
+
+                    <!-- Left Sidebar -->
+                    <div class="navbar left">
+
+                        <!-- The Design Process -->
+                        <div class="flex-shrink-0 p-3">
+                            <h5><b>The Design Process</b></h5>
+                            <ul class="list-unstyled ps-0">
+                                <li class="mb-1">
+
+                                    <div class="collapse show" id="preparation-collapse">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Overview</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Problem Statements</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- end of design process -->
+
+
+                        <!-- Empathize -->
+                        <div class="flex-shrink-0 p-3">
+                            <h5><b>Empathize</b></h5>
+
+                            <ul class="list-unstyled ps-0">
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded collapsed navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#preparation-collapse"
+                                        aria-expanded="true">
+                                        User Research
+                                    </button>
+                                    <div class="collapse show" id="preparation-collapse">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Observational Research</a>
+                                            </li>
+                                            <li><a href="#" class="link-dark rounded navtext">Proto Personas</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Research Plan</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Stakeholder Interviews</a>
+                                            </li>
+                                            <li><a href="#" class="link-dark rounded navtext">Surveys</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">User Interviews</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#interface-evaluation-collapse"
+                                        aria-expanded="true">
+                                        Competitive Research
+                                    </button>
+                                    <div class="collapse show" id="interface-evaluation-collapse" style="">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Accessibility
+                                                    Assessment</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Benchmarking</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Competitor Review</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Content Analysis</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Feature Analysis</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Feedback Analysis</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Heuristic Evaluation</a>
+                                            </li>
+                                            <li><a href="#" class="link-dark rounded navtext">SWOT Analysis</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">User Testing</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- end of empathize -->
+
+                        <!-- Define -->
+                        <div class="flex-shrink-0 p-3">
+                            <h5><b>Define</b></h5>
+
+                            <ul class="list-unstyled ps-0">
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded collapsed navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#preparation-collapse"
+                                        aria-expanded="true">
+                                        Brainstorming
+                                    </button>
+                                    <div class="collapse show" id="preparation-collapse">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Crazy 8's</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">I like, I wish, What
+                                                    if?</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Provocation Cards</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Reverse Thinking</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Role Playing</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">SCAMPER Technique</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#interface-evaluation-collapse"
+                                        aria-expanded="true">
+                                        Prioritization
+                                    </button>
+                                    <div class="collapse show" id="interface-evaluation-collapse" style="">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Dot Voting</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Mind Mapping</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Prioritization Matrix</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded  navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#user-testing-collapse"
+                                        aria-expanded="true">
+                                        Storytelling
+                                    </button>
+                                    <div class="collapse show" id="user-testing-collapse" style="">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded  navtext">Journey Maps</a></li>
+                                            <li><a href="#" class="link-dark rounded  navtext">Storyboards</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded  navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#user-testing-collapse"
+                                        aria-expanded="true">
+                                        Information Architecture
+                                    </button>
+                                    <div class="collapse show" id="user-testing-collapse" style="">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Card Sorting</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Content Inventory</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Content Labeling</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Design Principles</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Sitemaps</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">User Flows</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- end of define -->
+
+                        <!-- Ideate -->
+                        <div class="flex-shrink-0 p-3">
+                            <h5><b>Ideate</b></h5>
+
+
+                            <ul class="list-unstyled ps-0">
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded collapsed navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#preparation-collapse"
+                                        aria-expanded="true">
+                                        Brainstorming
+                                    </button>
+                                    <div class="collapse show" id="preparation-collapse">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Crazy 8's</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">I like, I wish, What
+                                                    if?</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Provocation Cards</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Reverse Thinking</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Role Playing</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">SCAMPER Technique</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#interface-evaluation-collapse"
+                                        aria-expanded="true">
+                                        Prioritization
+                                    </button>
+                                    <div class="collapse show" id="interface-evaluation-collapse" style="">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Dot Voting</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Mind Mapping</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Prioritization Matrix</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#user-testing-collapse"
+                                        aria-expanded="true">
+                                        Storytelling
+                                    </button>
+                                    <div class="collapse show" id="user-testing-collapse" style="">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Journey Maps</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Storyboards</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#user-testing-collapse"
+                                        aria-expanded="true">
+                                        Information Architecture
+                                    </button>
+                                    <div class="collapse show" id="user-testing-collapse" style="">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Card Sorting</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Content Inventory</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Content Labeling</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Design Principles</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Sitemaps</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">User Flows</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- end of ideate -->
+
+                        <!-- Prototype -->
+                        <div class="flex-shrink-0 p-3">
+                            <h5><b>Prototype</b></h5>
+
+                            <ul class="list-unstyled ps-0">
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded collapsed navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#preparation-collapse"
+                                        aria-expanded="true">
+                                        Atomic Design
+                                    </button>
+                                    <div class="collapse show" id="preparation-collapse">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Componenets</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Iconography</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Imagery</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Mood Boards</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Style Guides</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Style Tiles</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#interface-evaluation-collapse"
+                                        aria-expanded="true">
+                                        Prototyping
+                                    </button>
+                                    <div class="collapse show" id="interface-evaluation-collapse" style="">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Developer Handoff</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Digital Prototyping</a>
+                                            </li>
+                                            <li><a href="#" class="link-dark rounded navtext">Interactive Design</a>
+                                            </li>
+                                            <li><a href="#" class="link-dark rounded navtext">Iteration Process</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Paper Prototyping</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Responsive Design</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#user-testing-collapse"
+                                        aria-expanded="true">
+                                        Software
+                                    </button>
+                                    <div class="collapse show" id="user-testing-collapse" style="">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Adobe</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Figma</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Miro</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">InVision</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- end of prototype -->
+
+                        <!-- Test -->
+                        <div class="flex-shrink-0 p-3">
+                            <h5><b>Test</h5></b>
+                            <ul class="list-unstyled ps-0">
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded collapsed navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#preparation-collapse"
+                                        aria-expanded="true">
+                                        Preparation
+                                    </button>
+                                    <div class="collapse show" id="preparation-collapse">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Testing Plans &
+                                                    Templates</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Tools</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Documentation</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#interface-evaluation-collapse"
+                                        aria-expanded="true">
+                                        Interface Evaluation
+                                    </button>
+                                    <div class="collapse show" id="interface-evaluation-collapse" style="">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-dark rounded navtext">Accessibility Testing</a>
+                                            </li>
+                                            <li><a href="#" class="link-dark rounded navtext">A/B Testing</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Card Sorting</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Tree Testing</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">5-Second Test</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Comparative Analyses</a>
+                                            </li>
+                                            <li><a href="#" class="link-dark rounded navtext">KPI Analysis</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button class="btn btn-toggle align-items-center rounded navtext"
+                                        data-bs-toggle="collapse" data-bs-target="#user-testing-collapse"
+                                        aria-expanded="true">
+                                        User Testing
+                                    </button>
+                                    <div class="collapse show" id="user-testing-collapse" style="">
+                                        <ul class="btn-toggle-nav fw-normal pb-1 small">
+                                            <li><a href="#" class="link-light rounded navtext" id="utselected">Usability
+                                                    Testing</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Guerrilla User Testing</a>
+                                            </li>
+                                            <li><a href="#" class="link-dark rounded navtext">Remote User Testing</a>
+                                            </li>
+                                            <li><a href="#" class="link-dark rounded navtext">Task Analysis</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">Eye-tracking &
+                                                    Heat-maps</a></li>
+                                            <li><a href="#" class="link-dark rounded navtext">First-Click Testing</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- end of test -->
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!---------------------------- Right side ---------------------->
+
+            <div class="col-md-9">
+                <div class="uthead">
+                    <h1>Usability Testing Templates</h1>
+                    <img src="../images/test-icon.png" alt="Double diamond design with the test phases labeled">
+                </div>
+
+                <div class="utunderline">
+                </div>
+
+
+                <div class="utwhen">
+                    <h1 class="ut-headers">Recommended By Experts</h1>
+                    <div class="utunderline">
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="../images/excel_file_icon.png" class="card-img-top" id="templateimg" alt="Excel template file">
+                                <div class="card-body">
+                                    <h5 class="card-title">Testing Plan</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">by uxguru.com</h6>
+                                    <p class="card-text">455 Downloads</p>
+                                    <div class="card-icon-text-container">
+                                        <div class="card-icon-text">
+                                            <img src="../images/material-symbols_download.png">
+                                            <a href="#" class="card-link">Download</a>
+                                        </div>
+                                        <div class="card-icon-text">
+                                            <img src="../images/material-symbols_download.png">
+                                            <a href="#" class="card-link">Preview</a>
+                                        </div>
+                                        
+
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="utwhy">
+                <h1 class="ut-headers">Usability Test Script</h1>
+                <div class="utunderline">
+                </div>
+            </div>
+
+
         </div>
-      </div>
-    </nav>
-  
-  <!-- nav buttons -->
-  <button type="button" class="btn btn-outline-primary">Design Process</button>
-  <button type="button" class="btn btn-outline-secondary">Empathize</button>
-  <button type="button" class="btn btn-outline-success">Define</button>
-  <button type="button" class="btn btn-outline-danger">Ideate</button>
-  <button type="button" class="btn btn-outline-warning">Prototype</button>
-  <button type="button" class="btn btn-outline-info">Test</button>
-  <button type="button" class="btn btn-outline-dark">Community</button>
 
-</header>
+    </div> <!-- end of class = "row" div-->
+    </div> <!-- end of container-fluid-->
 
-<!-- main content -->
-
+    <!-- old download and preview -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
@@ -49,29 +476,32 @@
 
             <div class="col-md-9">
                 <!-- download button trigger modal -->
-                <button type="button" class = "btn btn-primary" data-bs-toggle="modal" data-bs-target="#DownloadModal">Download</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#DownloadModal">Download</button>
 
                 <!-- download modal -->
-                <div class="modal fade" id="DownloadModal" tabindex="-1" aria-labelledby="DownloadModalLabel" aria-hidden="true">
+                <div class="modal fade" id="DownloadModal" tabindex="-1" aria-labelledby="DownloadModalLabel"
+                    aria-hidden="true">
                     <div class="modal-dialog">
-                    
+
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h3 class="modal-title fs-5" id="DownloadModalLabel">Usability Test Script</h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
 
                             <div class="modal-body">
                                 <p>by: besttemplates.com</p>
                                 <div class="animate-dots">
-                                <div class="scaling-dots" id="downloadAnimation">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
+                                    <div class="scaling-dots" id="downloadAnimation">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
                                 </div>
-                            </div>
                                 <div id="downloadSuccessMessage" style="display: none;">Download Successful!</div>
                                 <h4>Downloading</h4>
                             </div>
@@ -84,32 +514,35 @@
                     </div>
                 </div> <!-- end of download modal -->
 
-                    <!-- preview button trigger modal -->
-                    <button type="button" class = "btn btn-primary" data-bs-toggle="modal" data-bs-target="#PreviewModal">Preview</button>
+                <!-- preview button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#PreviewModal">Preview</button>
 
-                    <!-- preview modal -->
-                    <div class="modal fade" id="PreviewModal" tabindex="-1" aria-labelledby="PreviewModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                        
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h3 class="modal-title fs-5" id="PreviewModalLabel">Preview - Usability Test Script</h3>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
+                <!-- preview modal -->
+                <div class="modal fade" id="PreviewModal" tabindex="-1" aria-labelledby="PreviewModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
 
-                                <div class="modal-body">
-                                    <p>by: besttemplates.com</p>
-                                    <img alt = "Sample image of template">
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Download</button>
-                                </div>
-
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title fs-5" id="PreviewModalLabel">Preview - Usability Test Script</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
+
+                            <div class="modal-body">
+                                <p>by: besttemplates.com</p>
+                                <img alt="Sample image of template">
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Download</button>
+                            </div>
+
                         </div>
-                    </div> <!-- end of preview modal -->
+                    </div>
+                </div> <!-- end of preview modal -->
 
 
             </div> <!-- end of col-md-9-->
@@ -118,10 +551,13 @@
 
     <!-- Bootstrap JavaScript and jQuery libraries -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
     <script src="../js/index.js"></script>
 
 
 </body>
-</html> 
+
+</html>

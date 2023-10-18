@@ -568,6 +568,29 @@ a {
     padding-left: 90px !important;
 }
 
+
+/* Usability Testing Templates */
+#templateimg {
+    width: 104.5px;
+    height: 123.75px;
+    margin: 32px;
+}
+
+.card-icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.card-icon-text img {
+    width: 20px;
+    height: 20px;
+}
+
+.card-icon-text-container {
+    display: flex;
+    gap: 20px;
+}
+
 /* Scaling Dots Animation */
 @keyframes scaling-dots {
     0%, 100% {
