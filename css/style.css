@@ -15,7 +15,7 @@ header, footer {
     background-color: #152730;
 }
 
-html, body, .hero-section, .accord, .design .main, .container {
+body, .hero-section, .accord, .design .main, .container {
     background-color: #152730 !important;
     color: #FFFFFF;
 }
@@ -591,6 +591,38 @@ a {
     gap: 20px;
 }
 
+
+.templatescard {
+    width: 300px;
+    height: 400px;
+
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.16) 100%), #182931;   
+    gap: 24px;
+    padding: 32px;
+    margin-left: 50px;
+
+}
+
+.card-subtitle {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: 'M PLUS Code Latin', monospace;
+
+}
+
+.tmpcards {
+    display: flex;
+}
+.downloadsval {
+    padding-top: 0px !important;
+    margin: 0px;
+    margin-bottom: 50px;
+    font-family: 'M PLUS Code Latin', monospace;
+
+}
 /* Scaling Dots Animation */
 @keyframes scaling-dots {
     0%, 100% {
@@ -620,7 +652,7 @@ a {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     top: 0;
     width: 100%;
